@@ -91,7 +91,7 @@ font-size: 16px;"> Today : <?php $d=date('d-m-Y'); echo "$d"; ?>  &nbsp; <a href
 
                         <!-- Tombol Tambah Data -->
 <div class="tambahdata">
-<a href="tambah_data.php" class="btn btn-primary">Tambah Data</a><br><br>
+<a href="tambah.php" class="btn btn-primary">Tambah Data</a><br><br>
 
 <!-- buat kolom -->
 <div class="table-responsive">
@@ -142,12 +142,12 @@ while ($data = mysqli_fetch_array($tampil)) {
         <td><?= $data['Atas_Nama'] ?></td>
         <td><?= $data['Ket_Akta_Pendirian'] ?></td>
         <td><?= $data['NoDPT'] ?></td>
-        <td><?= $data['NoSAPV '] ?></td>
-        <td><?= $data['NoNPWP '] ?></td>
+        <td><?= $data['NoSAPV'] ?></td>
+        <td><?= $data['NoNPWP'] ?></td>
         <td>
 
     <!-- buat tombol edit hapus -->
-    <a href="editdata.php?id_vendor=<?= $data['id_vendor'] ?>"
+    <a href="edit.php?id_vendor=<?= $data['id_vendor'] ?>"
         class="btn btn-warning btn-sm d-sm-inline-block mb-3 mb-sm-1"><i
             class="fa fa-edit"></i>Edit</a>
     <a href="hapusdata.php?id_vendor=<?= $data['id_vendor'] ?>"
