@@ -3,7 +3,7 @@
 <?php
 
 // untuk menampilkan data yang di tampilkan pada setiap pagenya adalah 10 data menggunakan fungsi sql (DESC LIMIT)
- $query = "SELECT * FROM t_vendor ORDER BY NoSAPV";
+ $query = "SELECT * FROM t_vendor ORDER BY id_vendor";
  $tampil = $koneksi->query($query);
  $no = 1;
 while ($data = mysqli_fetch_array($tampil)) {
